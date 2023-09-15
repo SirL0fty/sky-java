@@ -23,5 +23,7 @@ public class Variable {
         int yourAge = scanner.nextInt();
 
         System.out.println("Your favourite number and age added together is : " + (favNum + yourAge));
+
+        scanner.close();
     }
 }
