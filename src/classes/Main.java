@@ -19,7 +19,7 @@ public class Main {
         // Start the car
         c1.start();
 
-
+        // Add the destination miles
         int destinationMiles = 1000; // adds the amount of miles to the trip
         for (int i = 1; i <= destinationMiles; i++) {
             c1.increaseMiles(1);
