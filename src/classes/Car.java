@@ -67,6 +67,17 @@ public class Car {
         System.out.println("Reg:" + reg);
         System.out.println("Miles:" + miles);
     }
+    public void start() {
+        System.out.println("The car has started");
+    }
+
+    public void stop() {
+        System.out.println("The car has reached it's destination");
+    }
+
+    public void accelerate() {
+        System.out.println("The car is accelerating");
+    }
 
     public int increaseMiles(int addedMiles) {
         this.miles = this.miles + addedMiles;
