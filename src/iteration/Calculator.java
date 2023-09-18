@@ -39,7 +39,6 @@ public class Calculator {
                     total = num1 % num2;
                 } else {
                     System.out.println("Modulo by zero is not allowed.");
-                    return;
                 }
                 break;
             case '^':
