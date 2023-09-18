@@ -8,15 +8,17 @@ public class Car {
     private String model;
     private String make;
     private int miles;
+    private String ownerName;
 
     // Constructors
-    public Car(String colour, String reg, String model, String make, int miles) {
+    public Car(String colour, String reg, String model, String make, int miles, String ownerName) {
 
         this.colour = colour;
         this.reg = reg;
         this.model = model;
         this.make = make;
         this.miles = miles;
+        this.ownerName = ownerName;
     }
 
     //Getters
@@ -40,6 +42,10 @@ public class Car {
         return miles;
     }
 
+    public String getOwnerName() {
+        return ownerName;
+    }
+
     //Setters
     public void setColour(String colour) {
         this.colour = colour;
@@ -61,6 +67,10 @@ public class Car {
         this.miles = miles;
     }
 
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
     public void showCarInfo() {
         System.out.println("Make:" + make);
         System.out.println("Model:" + model);
@@ -68,15 +78,15 @@ public class Car {
         System.out.println("Miles:" + miles);
     }
     public void start() {
-        System.out.println("The car has started");
+        System.out.println("\nThe car has started");
     }
 
     public void stop() {
         System.out.println("The car has reached it's destination");
     }
 
-    public void accelerate() {
-        System.out.println("The car is accelerating");
+    public void driving() {
+        System.out.println("The car is driving");
     }
 
     public int increaseMiles(int addedMiles) {
